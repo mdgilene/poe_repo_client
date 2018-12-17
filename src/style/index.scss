@@ -5,8 +5,8 @@
 @import "card";
 
 body {
-  background: $black800;
-  color: $orange700;
+  background: $dark;
+  color: $accent;
 }
 
 /* width */
@@ -16,16 +16,16 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: $black800;
+  background: $dark;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $black900;
+  background: $black;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $black600;
+  background: $black;
 }

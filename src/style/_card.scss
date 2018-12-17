@@ -1,9 +1,34 @@
-.card {
-  padding: 1rem;
-  background: $black900;
+@mixin card {
   border-radius: 0.5rem;
+  .card-header {
+    background: darken($black, 10%);
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 1rem;
+  }
 
-  p {
+  .card-body {
+    padding: 1rem;
     color: $white;
   }
 }
+
+.card {
+  @include card;
+  background: $black;
+}
+
+.well {
+  @include card;
+  padding: 1rem;
+  background: $black;
+  box-shadow: inset 0 0 10px $black;
+}
+
+.error {
+  color: $white;
+  border: 1px solid darken($danger, 10%);
+  background: $danger;
+}
+
