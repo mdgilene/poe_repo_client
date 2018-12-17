@@ -1,0 +1,8 @@
+.container {
+  @include container;
+}
+
+.container-fluid {
+  @include container;
+  width: 100%;
+}

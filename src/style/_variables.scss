@@ -1,0 +1,69 @@
+$black: #000000;
+$white: #ffffff;
+$orange: #f06e04;
+
+$black100: lighten($black, 90%);
+$black200: lighten($black, 80%);
+$black300: lighten($black, 70%);
+$black400: lighten($black, 60%);
+$black500: lighten($black, 50%);
+$black600: lighten($black, 40%);
+$black700: lighten($black, 30%);
+$black800: lighten($black, 20%);
+$black900: lighten($black, 10%);
+
+$orange100: lighten($orange, 90%);
+$orange200: lighten($orange, 80%);
+$orange300: lighten($orange, 70%);
+$orange400: lighten($orange, 60%);
+$orange500: lighten($orange, 50%);
+$orange600: lighten($orange, 40%);
+$orange700: lighten($orange, 30%);
+$orange800: lighten($orange, 20%);
+$orange900: lighten($orange, 10%);
+
+$sm-width: 576px;
+$md-width: 768px;
+$lg-width: 992px;
+$xl-width: 1200px;
+
+@mixin sm {
+  @media (min-width: #{$sm-width}) and (max-width: #{$md-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$md-width}) and (max-width: #{$lg-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$lg-width}) and (max-width: #{$xl-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$xl-width}) {
+    @content;
+  }
+}
+
+@mixin container {
+  margin-left: auto;
+  margin-right: auto;
+  @include sm {
+    width: 100%;
+  }
+  @include md {
+    width: 90%;
+  }
+  @include lg {
+    width: 80%;
+  }
+  @include xl {
+    width: 70%;
+  }
+}

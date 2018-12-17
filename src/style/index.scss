@@ -1,0 +1,31 @@
+@import "variables";
+
+@import "container";
+@import "navbar";
+@import "card";
+
+body {
+  background: $black800;
+  color: $orange700;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $black800;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $black900;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $black600;
+}

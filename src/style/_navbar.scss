@@ -1,0 +1,28 @@
+.navbar {
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  color: $white;
+  background: $black900;
+
+  .container {
+    display: flex;
+  }
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}
